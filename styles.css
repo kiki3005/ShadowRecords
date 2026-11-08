@@ -425,6 +425,7 @@ footer {
   color: var(--muted);
   font-style: italic;
 }
+
 .case-actions {
   display: flex;
   gap: 12px;
