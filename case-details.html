@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore case maps, suspects, evidence, and audio from Shadow Records.">
+  <title>Shadow Records | Case Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Shadow Records</h1>
+    <p class="tagline">Every clue has a story.</p>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="cases.html">Case Files</a>
+      <a href="about.html">About the Detective</a>
+      <a href="submit-theory.html">Submit Your Theory</a>
+   </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <p class="eyebrow">The Detective's Archive</p>
+      <h2>Case Maps &amp; Details</h2>
+      <p>Select a case from the Case Files page to reveal its map and investigation file.</p>
+    </section>
+
+    <section class="case-map" id="manuscript-map">
+      <p class="eyebrow">Case 001 · Open Investigation</p>
+      <h2>The Missing Manuscript</h2>
+
+      <img class="case-map-image" src="images/manuscript.jpg"
+           alt="Illustrated map of Bellweather Library">
+
+      <article class="case-story">
+        <h3>What happened?</h3>
+        <p>
+          At 9:15 PM, the rare <em>Atlas of Lost Places</em> disappeared from
+          its display case inside Bellweather Library during a six-minute power outage.
+        </p>
+        <p><strong>Location:</strong> Bellweather Library</p>
+      </article>
+
+      <h3>The Suspects</h3>
+      <div class="suspect-list">
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/clara-voss.jpg" alt="Clara Voss in the interrogation room">
+          <h4>Clara Voss — The Archivist</h4>
+          <p>She knew the display case’s old lock had a faulty hinge.</p>
+        </article>
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/elias-reed.jpg" alt="Dr. Elias Reed in the interrogation room">
+          <h4>Dr. Elias Reed — The Historian</h4>
+          <p>He had requested access to the manuscript earlier that evening.</p>
+        </article>
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/morgan-vale.jpg" alt="Morgan Vale in the interrogation room">
+          <h4>Morgan Vale — The Night Guard</h4>
+          <p>He was responsible for checking the library during the blackout.</p>
+        </article>
+      </div>
+
+      <h3>Evidence Log</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Clue</th><th>Found at</th><th>Details</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Wet footprint</td><td>East corridor</td><td>A muddy print points toward the reading room.</td></tr>
+            <tr><td>Blue thread</td><td>Display case</td><td>A short piece of fabric was caught on the hinge.</td></tr>
+            <tr><td>Power log</td><td colspan="2">The power failed between 9:12 PM and 9:18 PM.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+     <aside class="detective-notebook">
+  <p class="notebook-label">Detective’s Notebook · Case 001</p>
+  <h3>Field Note</h3>
+  <p>
+    The storm may have hidden the sound of someone entering the library.
+    Check the wet footprints near the east corridor.
+  </p>
+
+  <details>
+    <summary>Read the private note</summary>
+    <p>The power outage lasted six minutes, but the security log shows a
+    longer gap. Someone may have changed the clock.</p>
+  </details>
+</aside> 
+
+      <aside class="detective-note">
+        <h3>Detective’s Note</h3>
+        <p>One clue may be misleading. Compare the details before choosing a suspect.</p>
+      </aside>
+
+      <details>
+        <summary>Reveal a hint</summary>
+        <p>Compare the footprint’s direction with the library entrance.</p>
+      </details>
+
+      <h3>Case Audio</h3>
+      <audio controls>
+        <source src="Audios/manuscript.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+    </section>
+
+    <section class="case-map" id="painting-map">
+      <p class="eyebrow">Case 002 · Open Investigation</p>
+      <h2>The Midnight Painting</h2>
+
+      <img class="case-map-image" src="images/painting.jpg"
+           alt="Illustrated map of the North Gallery">
+
+      <article class="case-story">
+        <h3>What happened?</h3>
+        <p>A portrait in the North Gallery seems to change position every night.</p>
+        <p><strong>Location:</strong> North Gallery</p>
+      </article>
+
+      <h3>The Suspects</h3>
+      <div class="suspect-list">
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/elena-ward.jpg" alt="Elena Ward in the interrogation room">
+          <h4>Elena Ward — The Curator</h4>
+          <p>She has the keys to every gallery room.</p>
+        </article>
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/jonas-bell.jpg" alt="Jonas Bell in the interrogation room">
+          <h4>Jonas Bell — The Restorer</h4>
+          <p>He worked near the portrait earlier that evening.</p>
+        </article>
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/ruth-hale.jpg" alt="Ruth Hale in the interrogation room">
+          <h4>Ruth Hale — The Night Guard</h4>
+          <p>She was alone in the gallery after closing.</p>
+        </article>
+      </div>
+
+      <h3>Evidence Log</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Clue</th><th>Found at</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr><td>Open window</td><td>North Gallery</td><td>The latch has no sign of damage.</td></tr>
+            <tr><td>Loose frame</td><td>East corridor</td><td>Dust outlines a different position on the wall.</td></tr>
+            <tr><td>Paint fleck</td><td colspan="2">It matches the portrait’s dark red frame.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="detective-notebook">
+  <p class="notebook-label">Detective’s Notebook · Case 001</p>
+  <h3>Field Note</h3>
+  <p>
+    The storm may have hidden the sound of someone entering the library.
+    Check the wet footprints near the east corridor.
+  </p>
+
+  <details>
+    <summary>Read the private note</summary>
+    <p>The power outage lasted six minutes, but the security log shows a
+    longer gap. Someone may have changed the clock.</p>
+  </details>
+</aside>
+
+      <aside class="detective-note">
+        <h3>Detective’s Note</h3>
+        <p>Check the window, but don’t assume it was used to enter the gallery.</p>
+      </aside>
+
+      <details>
+        <summary>Reveal a hint</summary>
+        <p>Check whether the painting could have moved through a locked door.</p>
+      </details>
+
+      <h3>Case Audio</h3>
+      <audio controls>
+        <source src="Audios/painting.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+    </section>
+
+    <section class="case-map" id="violin-map">
+      <p class="eyebrow">Case 003 · Open Investigation</p>
+      <h2>The Vanishing Violin</h2>
+
+      <img class="case-map-image" src="images/violin.jpg"
+           alt="Illustrated map of the concert hall and backstage rooms">
+
+      <article class="case-story">
+        <h3>What happened?</h3>
+        <p>A priceless violin vanished shortly before the evening concert.</p>
+        <p><strong>Location:</strong> Bellweather Concert Hall</p>
+      </article>
+
+      <h3>The Suspects</h3>
+      <div class="suspect-list">
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/marco-bell.jpg" alt="Marco Bell in the interrogation room">
+          <h4>Marco Bell — The Violinist</h4>
+          <p>He was the last performer to handle the instrument.</p>
+        </article>
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/sylvie-cross.jpg" alt="Sylvie Cross in the interrogation room">
+          <h4>Sylvie Cross — The Stage Manager</h4>
+          <p>She could move freely between the stage and backstage rooms.</p>
+        </article>
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/peter-shaw.jpg" alt="Peter Shaw in the interrogation room">
+          <h4>Peter Shaw — The Technician</h4>
+          <p>He was checking equipment near the side entrance.</p>
+        </article>
+      </div>
+
+      <h3>Evidence Log</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Clue</th><th>Found at</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr><td>Footprints</td><td>Side entrance</td><td>They lead toward the loading door.</td></tr>
+            <tr><td>Empty case</td><td>Backstage</td><td>The case was left open beside the instrument room.</td></tr>
+            <tr><td>Delivery cart</td><td colspan="2">Its sign-out time is missing from the log.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="detective-notebook">
+  <p class="notebook-label">Detective’s Notebook · Case 001</p>
+  <h3>Field Note</h3>
+  <p>
+    The storm may have hidden the sound of someone entering the library.
+    Check the wet footprints near the east corridor.
+  </p>
+
+  <details>
+    <summary>Read the private note</summary>
+    <p>The power outage lasted six minutes, but the security log shows a
+    longer gap. Someone may have changed the clock.</p>
+  </details>
+</aside>
+
+      <aside class="detective-note">
+        <h3>Detective’s Note</h3>
+        <p>Compare the footprints with the concert schedule and delivery log.</p>
+      </aside>
+
+      <details>
+        <summary>Reveal a hint</summary>
+        <p>Compare the time of the footprints with the concert schedule.</p>
+      </details>
+
+      <h3>Case Audio</h3>
+      <audio controls>
+        <source src="Audios/violin.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+    </section>
+
+    <section class="case-map" id="lighthouse-map">
+      <p class="eyebrow">Case 007 · Open Investigation</p>
+      <h2>The Lighthouse Signal</h2>
+
+      <img class="case-map-image" src="images/lighthouse.jpg"
+           alt="Illustrated map of the rocky lighthouse coast">
+
+      <article class="case-story">
+        <h3>What happened?</h3>
+        <p>A strange signal appears from the abandoned lighthouse every midnight.</p>
+        <p><strong>Location:</strong> North Point Lighthouse</p>
+      </article>
+
+      <h3>The Suspects</h3>
+      <div class="suspect-list">
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/harold-pike.jpg" alt="Harold Pike in the interrogation room">
+          <h4>Harold Pike — The Harbor Keeper</h4>
+          <p>He knows how to operate the lighthouse signal equipment.</p>
+        </article>
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/nora-finch.jpg" alt="Nora Finch in the interrogation room">
+          <h4>Nora Finch — The Fisher</h4>
+          <p>Her boat was seen near North Point after midnight.</p>
+        </article>
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/cal-reed.jpg" alt="Cal Reed in the interrogation room">
+          <h4>Cal Reed — The Photographer</h4>
+          <p>He had been taking pictures near the coastal path.</p>
+        </article>
+      </div>
+
+      <h3>Evidence Log</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Clue</th><th>Found at</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr><td>Footprint</td><td>Coastal path</td><td>The print points toward the lighthouse.</td></tr>
+            <tr><td>Broken lens</td><td>Lighthouse steps</td><td>A piece of glass is missing from the signal lamp.</td></tr>
+            <tr><td>Radio note</td><td colspan="2">A midnight signal was recorded on the same night.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="detective-notebook">
+  <p class="notebook-label">Detective’s Notebook · Case 001</p>
+  <h3>Field Note</h3>
+  <p>
+    The storm may have hidden the sound of someone entering the library.
+    Check the wet footprints near the east corridor.
+  </p>
+
+  <details>
+    <summary>Read the private note</summary>
+    <p>The power outage lasted six minutes, but the security log shows a
+    longer gap. Someone may have changed the clock.</p>
+  </details>
+</aside>
+
+      <aside class="detective-note">
+        <h3>Detective’s Note</h3>
+        <p>Work out who could reach the lighthouse before the signal appeared.</p>
+      </aside>
+
+      <details>
+        <summary>Reveal a hint</summary>
+        <p>Follow the path between the dock and the lighthouse.</p>
+      </details>
+
+      <h3>Case Audio</h3>
+      <audio controls>
+        <source src="Audios/lighthouse.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+    </section>
+
+    <section class="case-map" id="museum-map">
+      <p class="eyebrow">Case 008 · Open Investigation</p>
+      <h2>The Museum Heist</h2>
+
+      <img class="case-map-image" src="images/museum.jpg"
+           alt="Illustrated floor map of the museum">
+
+      <article class="case-story">
+        <h3>What happened?</h3>
+        <p>A valuable diamond disappeared while the museum was open.</p>
+        <p><strong>Location:</strong> Bellweather Museum</p>
+      </article>
+
+      <h3>The Suspects</h3>
+      <div class="suspect-list">
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/vivian-stone.jpg" alt="Vivian Stone in the interrogation room">
+          <h4>Vivian Stone — The Curator</h4>
+          <p>She can open the diamond display case.</p>
+        </article>
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/leon-park.jpg" alt="Leon Park in the interrogation room">
+          <h4>Leon Park — The Security Guard</h4>
+          <p>He carries the keys to the security office.</p>
+        </article>
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/aurthur-wynn.jpg" alt="Arthur Wynn in the interrogation room">
+          <h4>Arthur Wynn — The Collector</h4>
+          <p>He studied the diamond closely during his visit.</p>
+        </article>
+      </div>
+
+      <h3>Evidence Log</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Clue</th><th>Found at</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr><td>Display case</td><td>Gem Gallery</td><td>The lock has no scratch marks.</td></tr>
+            <tr><td>Missing key</td><td>Security office</td><td>The spare key is not in its usual place.</td></tr>
+            <tr><td>Visitor route</td><td colspan="2">One visitor passed the gallery twice.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="detective-notebook">
+  <p class="notebook-label">Detective’s Notebook · Case 001</p>
+  <h3>Field Note</h3>
+  <p>
+    The storm may have hidden the sound of someone entering the library.
+    Check the wet footprints near the east corridor.
+  </p>
+
+  <details>
+    <summary>Read the private note</summary>
+    <p>The power outage lasted six minutes, but the security log shows a
+    longer gap. Someone may have changed the clock.</p>
+  </details>
+</aside>
+
+      <aside class="detective-note">
+        <h3>Detective’s Note</h3>
+        <p>Think about who could open the case without leaving damage.</p>
+      </aside>
+
+      <details>
+        <summary>Reveal a hint</summary>
+        <p>Check which rooms connect the gem gallery to the security office.</p>
+      </details>
+
+      <h3>Case Audio</h3>
+      <audio controls>
+        <source src="Audios/museum.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+    </section>
+
+    <section class="case-map" id="forest-map">
+      <p class="eyebrow">Case 009 · Open Investigation</p>
+      <h2>The Forest Footprints</h2>
+
+      <img class="case-map-image" src="images/forest.jpg"
+           alt="Illustrated map of the forest trail, cabin, and river">
+
+      <article class="case-story">
+        <h3>What happened?</h3>
+        <p>Mysterious footprints lead from an old forest cabin toward a hidden path beside the river.</p>
+        <p><strong>Location:</strong> Blackpine Forest</p>
+      </article>
+
+      <h3>The Suspects</h3>
+      <div class="suspect-list">
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/june-moss.jpg" alt="June Moss in the interrogation room">
+          <h4>June Moss — The Cabin Owner</h4>
+          <p>She knows every path around the cabin.</p>
+        </article>
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/ranger-cole.jpg" alt="Ranger Cole in the interrogation room">
+          <h4>Ranger Cole — The Park Ranger</h4>
+          <p>He carries a map of the forest trails.</p>
+        </article>
+        <article class="suspect-card">
+          <img class="suspect-photo" src="images/suspects/sam-alder.jpg" alt="Sam Alder in the interrogation room">
+          <h4>Sam Alder — The Camper</h4>
+          <p>He was seen near the river bridge that night.</p>
+        </article>
+      </div>
+
+      <h3>Evidence Log</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Clue</th><th>Found at</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr><td>Footprints</td><td>Cabin path</td><td>They continue toward the river.</td></tr>
+            <tr><td>Blue fabric</td><td>River bridge</td><td>A torn piece is caught on the railing.</td></tr>
+            <tr><td>Campfire</td><td colspan="2">It was still warm when the ranger arrived.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="detective-notebook">
+  <p class="notebook-label">Detective’s Notebook · Case 001</p>
+  <h3>Field Note</h3>
+  <p>
+    The storm may have hidden the sound of someone entering the library.
+    Check the wet footprints near the east corridor.
+  </p>
+
+  <details>
+    <summary>Read the private note</summary>
+    <p>The power outage lasted six minutes, but the security log shows a
+    longer gap. Someone may have changed the clock.</p>
+  </details>
+</aside>
+
+      <aside class="detective-note">
+        <h3>Detective’s Note</h3>
+        <p>Follow the footprints and check which suspect could cross the river.</p>
+      </aside>
+
+      <details>
+        <summary>Reveal a hint</summary>
+        <p>Notice where the footprints cross the river trail.</p>
+      </details>
+
+      <h3>Case Audio</h3>
+      <audio controls>
+        <source src="Audios/forest.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+    </section>
+
+    <div class="case-actions">
+      <a class="button" href="submit-theory.html">Submit Your Theory</a>
+      <a class="button" href="cases.html">Back to Case Files</a>
+   </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Shadow Records. A fictional detective website.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit your theory about a Shadow Records case.">
+  <title>Shadow Records | Submit Your Theory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Shadow Records</h1>
+    <p class="tagline">Every clue has a story.</p>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="cases.html">Case Files</a>
+      <a href="about.html">About the Detective</a>
+      <a href="submit-theory.html" aria-current="page">Submit Your Theory</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <p class="eyebrow">Your Investigation</p>
+      <h2>Submit Your Theory</h2>
+      <p>Choose a case, review its suspects, and explain your reasoning.</p>
+    </section>
+
+    <form class="theory-form" action="#" method="get">
+      <fieldset>
+        <legend>Detective Details</legend>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email"
+               placeholder="detective@example.com" required>
+
+        <label for="password">Case access code</label>
+        <input type="password" id="password" name="password"
+               minlength="4" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Theory</legend>
+
+        <label for="case">Choose a case</label>
+        <select id="case" name="case" required>
+          <option value="">Select a case</option>
+          <option value="001">Case 001 — The Missing Manuscript</option>
+          <option value="002">Case 002 — The Midnight Painting</option>
+          <option value="003">Case 003 — The Vanishing Violin</option>
+          <option value="007">Case 007 — The Lighthouse Signal</option>
+          <option value="008">Case 008 — The Museum Heist</option>
+          <option value="009">Case 009 — The Forest Footprints</option>
+        </select>
+
+        <label for="case-number">Case number</label>
+        <input type="number" id="case-number" name="case-number"
+               min="1" max="9" required>
+
+        <label for="date">Date of your investigation</label>
+        <input type="date" id="date" name="date">
+
+        <p class="form-question">Open the suspect list for your case</p>
+
+        <details>
+          <summary>Case 001 — The Missing Manuscript</summary>
+          <label class="choice"><input type="radio" name="suspect" value="clara-voss" required> Clara Voss, the Archivist</label>
+          <label class="choice"><input type="radio" name="suspect" value="elias-reed"> Dr. Elias Reed, the Historian</label>
+          <label class="choice"><input type="radio" name="suspect" value="morgan-vale"> Morgan Vale, the Night Guard</label>
+        </details>
+
+        <details>
+          <summary>Case 002 — The Midnight Painting</summary>
+          <label class="choice"><input type="radio" name="suspect" value="elena-ward"> Elena Ward, the Curator</label>
+          <label class="choice"><input type="radio" name="suspect" value="jonas-bell"> Jonas Bell, the Restorer</label>
+          <label class="choice"><input type="radio" name="suspect" value="ruth-hale"> Ruth Hale, the Night Guard</label>
+        </details>
+
+        <details>
+          <summary>Case 003 — The Vanishing Violin</summary>
+          <label class="choice"><input type="radio" name="suspect" value="marco-bell"> Marco Bell, the Violinist</label>
+          <label class="choice"><input type="radio" name="suspect" value="sylvie-cross"> Sylvie Cross, the Stage Manager</label>
+          <label class="choice"><input type="radio" name="suspect" value="peter-shaw"> Peter Shaw, the Technician</label>
+        </details>
+
+        <details>
+          <summary>Case 007 — The Lighthouse Signal</summary>
+          <label class="choice"><input type="radio" name="suspect" value="harold-pike"> Harold Pike, the Harbor Keeper</label>
+          <label class="choice"><input type="radio" name="suspect" value="nora-finch"> Nora Finch, the Fisher</label>
+          <label class="choice"><input type="radio" name="suspect" value="cal-reed"> Cal Reed, the Photographer</label>
+        </details>
+
+        <details>
+          <summary>Case 008 — The Museum Heist</summary>
+          <label class="choice"><input type="radio" name="suspect" value="vivian-stone"> Vivian Stone, the Curator</label>
+          <label class="choice"><input type="radio" name="suspect" value="leon-park"> Leon Park, the Security Guard</label>
+          <label class="choice"><input type="radio" name="suspect" value="arthur-wynn"> Arthur Wynn, the Collector</label>
+        </details>
+
+        <details>
+          <summary>Case 009 — The Forest Footprints</summary>
+          <label class="choice"><input type="radio" name="suspect" value="june-moss"> June Moss, the Cabin Owner</label>
+          <label class="choice"><input type="radio" name="suspect" value="ranger-cole"> Ranger Cole</label>
+          <label class="choice"><input type="radio" name="suspect" value="sam-alder"> Sam Alder, the Camper</label>
+        </details>
+
+        <p class="form-question">Which clues support your theory?</p>
+        <label class="choice"><input type="checkbox" name="clues" value="footprint"> A footprint</label>
+        <label class="choice"><input type="checkbox" name="clues" value="thread"> A piece of thread or fabric</label>
+        <label class="choice"><input type="checkbox" name="clues" value="key"> A key or access clue</label>
+        <label class="choice"><input type="checkbox" name="clues" value="other"> Another clue</label>
+
+        <label for="confidence">How confident are you?</label>
+        <select id="confidence" name="confidence" required>
+          <option value="">Choose a level</option>
+          <option value="careful">Still investigating</option>
+          <option value="sure">Fairly sure</option>
+          <option value="certain">Case closed!</option>
+        </select>
+
+        <label for="explanation">Explain your theory</label>
+        <textarea id="explanation" name="explanation" rows="6"
+                  placeholder="Describe what you think happened..."
+                  required></textarea>
+      </fieldset>
+
+      <button class="button" type="submit">Send Your Theory</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Shadow Records. A fictional detective website.</p>
+  </footer>
+</body>
+</html>
