@@ -454,3 +454,10 @@ footer {
 .detective-notebook details p {
   padding-top: 10px;
 }
+
+/* TEMPORARY HEADER TEST */
+header h1,
+header nav,
+header nav a {
+    font-family: Arial, sans-serif !important;
+}
