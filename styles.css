@@ -454,3 +454,16 @@ footer {
 .detective-notebook details p {
   padding-top: 10px;
 }
+
+/* ---------- Header typography consistency ---------- */
+header,
+header h1,
+header .tagline,
+header nav,
+header nav a {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+header h1 {
+  font-weight: 700;
+}
